@@ -49,3 +49,6 @@ const [firstScore, secondScore] = scores;
 //log first two scores to the console
 console.log("First Score:", firstScore);
 console.log("Second Score:", secondScore);
+
+//clone student object using the spread operator
+const clonedStudent = { ...student };
