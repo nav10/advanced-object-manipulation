@@ -39,3 +39,13 @@ const { name, courses } = student;
 //log the extracted properties
 console.log("Extracted Name:", name);
 console.log("Extracted Courses:", courses);
+
+//create array of scores
+const scores = [82, 78, 65, 92];
+
+//destructure the first two scores from the array
+const [firstScore, secondScore] = scores;
+
+//log first two scores to the console
+console.log("First Score:", firstScore);
+console.log("Second Score:", secondScore);
