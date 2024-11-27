@@ -88,3 +88,12 @@ student.getTotalCourses = function () {
 //testing new method
 const totalCourses = student.getTotalCourses();
 console.log("Total Number of Courses:", totalCourses);
+
+//array of scores
+const newScores = [55, 96, 68, 75, 80];
+
+//reduce method to calculate the average
+const averageScore = newScores.reduce((sum, score) => sum + score, 0) / newScores.length;
+
+//log average score
+console.log("Average Score:", averageScore);
