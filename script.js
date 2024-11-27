@@ -52,3 +52,9 @@ console.log("Second Score:", secondScore);
 
 //clone student object using the spread operator
 const clonedStudent = { ...student };
+
+//add new property to the cloned object
+clonedStudent.graduationYear = 2026;
+
+//log the updated cloned object
+console.log("Cloned Student with New Property:", clonedStudent);
