@@ -23,3 +23,12 @@ const studentJSON = JSON.stringify(student);
 
 //log the JSON string to the console
 console.log("Student JSON String:", studentJSON);
+
+//convert the JSON string back into a JavaScript object
+const parsedStudent = JSON.parse(studentJSON);
+
+//log new created object
+console.log("Parsed Student Object:", parsedStudent);
+
+//compare the parsed object with the original
+console.log("Is parsed object same as the original?", JSON.stringify(parsedStudent) === JSON.stringify(student));
