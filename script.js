@@ -32,3 +32,10 @@ console.log("Parsed Student Object:", parsedStudent);
 
 //compare the parsed object with the original
 console.log("Is parsed object same as the original?", JSON.stringify(parsedStudent) === JSON.stringify(student));
+
+//destructure the name and courses properties from the student object
+const { name, courses } = student;
+
+//log the extracted properties
+console.log("Extracted Name:", name);
+console.log("Extracted Courses:", courses);
