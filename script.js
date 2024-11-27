@@ -58,3 +58,12 @@ clonedStudent.graduationYear = 2026;
 
 //log the updated cloned object
 console.log("Cloned Student with New Property:", clonedStudent);
+
+//new array of courses to merge
+const newCourses = ["Algorithms", "Operating Systems"];
+
+//merge arrays using the spread operator
+const allCourses = [...student.courses, ...newCourses];
+
+//log merged array
+console.log("Merged Courses Array:", allCourses);
