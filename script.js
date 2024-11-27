@@ -67,3 +67,15 @@ const allCourses = [...student.courses, ...newCourses];
 
 //log merged array
 console.log("Merged Courses Array:", allCourses);
+
+//method to dynamically add a new course
+student.addCourse = function (newCourse) {
+    this.courses.push(newCourse);
+    console.log(`Course "${newCourse}" added successfully.`);
+};
+
+//testing new method
+student.addCourse("Advanced Front End Programming");
+
+//log the updated courses array
+console.log("Updated Courses Array:", student.courses);
