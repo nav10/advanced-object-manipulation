@@ -79,3 +79,12 @@ student.addCourse("Advanced Front End Programming");
 
 //log the updated courses array
 console.log("Updated Courses Array:", student.courses);
+
+//method to calculate the total number of courses
+student.getTotalCourses = function () {
+    return this.courses.length;
+};
+
+//testing new method
+const totalCourses = student.getTotalCourses();
+console.log("Total Number of Courses:", totalCourses);
